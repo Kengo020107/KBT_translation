@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国際ビジネス翻訳社</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Noto Sans JP',sans-serif;
+  background:#f4f6f9;
+  color:#1c1c1c;
+  line-height:1.8;
+}
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#ffffff;
+  box-shadow:0 4px 20px rgba(0,0,0,0.05);
+  z-index:1000;
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 8%;
+}
+.nav img{height:100px;display:block;}
+.nav ul{list-style:none;display:flex;gap:28px;}
+.nav a{text-decoration:none;color:#333;font-weight:600;transition:.3s;}
+.nav a:hover{color:#e10600;}
+section{padding:150px 8%;}
+.section-inner{max-width:1100px;margin:0 auto;}
+.section-title{font-size:34px;margin-bottom:80px;text-align:center;font-weight:700;}
+.hero{
+  padding:180px 8% 150px 8%;
+  background:linear-gradient(135deg,#ffffff 0%,#eef2f7 100%);
+  text-align:center;
+}
+.hero h1{font-size:48px;line-height:1.5;margin-bottom:35px;}
+.hero p{font-size:20px;color:#555;margin-bottom:50px;}
+.btn{
+  display:inline-block;
+  padding:16px 40px;
+  background:#e10600;
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:600;
+  transition:.3s;
+}
+.btn:hover{background:#b80000;transform:translateY(-3px);}
+.cards, .pricing, .flow{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:60px;
+}
+.card, .plan, .step{
+  background:#ffffff;
+  padding:60px;
+  border-radius:24px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.05);
+}
+.card h3, .plan h3{margin-bottom:25px;font-size:22px;color:#e10600;}
+.card p, .plan ul li, .step p{color:#555;}
+.plan{text-align:center;position:relative;}
+.plan.featured{border:2px solid #e10600;transform:scale(1.05);}
+.badge{
+  position:absolute;top:-18px;left:50%;
+  transform:translateX(-50%);
+  background:#e10600;color:#fff;
+  padding:8px 20px;border-radius:30px;font-size:13px;
+}
+.plan .price{font-size:30px;margin:30px 0;font-weight:700;color:#e10600;}
+.plan ul{list-style:none;margin-bottom:30px;}
+.plan ul li{margin-bottom:12px;}
+.company-table{width:100%;border-collapse:collapse;}
+.company-table th,.company-table td{
+  padding:20px 10px;
+  border-bottom:1px solid #e5e5e5;
+  text-align:left;
+}
+.cta{text-align:center;background:#ffffff;}
+footer{text-align:center;padding:40px;font-size:13px;color:#777;}
+@media(max-width:900px){.nav ul{display:none}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <img src="logo.PNG" alt="">
+    <ul>
+      <li><a href="#service">サービス</a></li>
+      <li><a href="#pricing">料金プラン</a></li>
+      <li><a href="#flow">導入の流れ</a></li>
+      <li><a href="#company">会社概要</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="section-inner">
+    <h1>言葉を変えるのではない。<br>市場に響く形へ変える。</h1>
+    <p>売上と採用を加速させる、次世代の海外向けローカライズサービス。</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlufWkgNPSx8T_Bp51PmmtUAtzvFpWJA0oeaTFrPafQorZsw/viewform?usp=header"
+       class="btn" target="_blank" rel="noopener">
+       無料相談はこちら
+    </a>
+  </div>
+</section>
+
+<section id="service">
+  <div class="section-inner">
+    <h2 class="section-title">サービス</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>グローバル採用・進出支援</h3>
+        <p>求人票・契約書・社内文書をローカライズし、優秀な人材に選ばれる企業へ導きます。</p>
+      </div>
+      <div class="card">
+        <h3>観光・インバウンド最適化</h3>
+        <p>メニュー・館内案内・販促物を、訪問・購買につながる表現へ再設計します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="section-inner">
+    <h2 class="section-title">料金プラン</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>スタンダード</h3>
+        <div class="price">¥100,000〜</div>
+        <ul>
+          <li>翻訳＋ローカライズ</li>
+          <li>ネイティブチェック</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdho50RF-_T0ArXG78NS4vbJOtK8YusoEfTZrL47LnLwN9lFw/viewform?usp=sharing&ouid=105930625908143107413"
+           class="btn" target="_blank" rel="noopener">
+           相談する
+        </a>
+      </div>
+
+      <div class="plan featured">
+        <div class="badge">最も選ばれています</div>
+        <h3>ビジネス強化</h3>
+        <div class="price">¥180,000〜</div>
+        <ul>
+          <li>成果重視ローカライズ</li>
+          <li>構成再設計</li>
+          <li>プレゼン原稿作成</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmwBLZBuisdNEFtL9-lwzJpAGPuFxx2UiKJZp66XQ91YhGWA/viewform?usp=sharing&ouid=105930625908143107413"
+           class="btn" target="_blank" rel="noopener">
+           相談する
+        </a>
+      </div>
+
+      <div class="plan">
+        <h3>戦略パッケージ</h3>
+        <div class="price">¥300,000〜</div>
+        <ul>
+          <li>IR・採用・販促統合支援</li>
+          <li>競合比較資料作成</li>
+          <li>ストーリー再構築</li>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTw6b6hB8WXr-BDBSU1kTl49nUuJ-Rc7OBZZmdGRFZ1pH2ng/viewform?usp=sharing&ouid=105930625908143107413"
+           class="btn" target="_blank" rel="noopener">
+           相談する
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="section-inner">
+    <h2 class="section-title">お問い合わせ</h2>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlufWkgNPSx8T_Bp51PmmtUAtzvFpWJA0oeaTFrPafQorZsw/viewform?usp=header"
+       class="btn" target="_blank" rel="noopener">
+       今すぐ問い合わせる
+    </a>
+  </div>
+</section>
+
+<footer>
+© 2026 合同会社 国剤ビジネス翻訳社 All Rights Reserved.
+</footer>
+
+</body>
+</html>
