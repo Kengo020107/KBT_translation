@@ -28,7 +28,10 @@ header{
   align-items:center;
   padding:12px 8%;
 }
-.nav img{height:100px;display:block;}
+.nav img{
+  height:100px;
+  display:block;
+}
 .nav ul{list-style:none;display:flex;gap:28px;}
 .nav a{text-decoration:none;color:#333;font-weight:600;transition:.3s;}
 .nav a:hover{color:#e10600;}
@@ -53,19 +56,19 @@ section{padding:150px 8%;}
   transition:.3s;
 }
 .btn:hover{background:#b80000;transform:translateY(-3px);}
-.cards, .pricing, .flow{
+.cards, .pricing{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   gap:60px;
 }
-.card, .plan, .step{
+.card, .plan{
   background:#ffffff;
   padding:60px;
   border-radius:24px;
   box-shadow:0 25px 60px rgba(0,0,0,0.05);
 }
 .card h3, .plan h3{margin-bottom:25px;font-size:22px;color:#e10600;}
-.card p, .plan ul li, .step p{color:#555;}
+.card p, .plan ul li{color:#555;}
 .plan{text-align:center;position:relative;}
 .plan.featured{border:2px solid #e10600;transform:scale(1.05);}
 .badge{
@@ -93,11 +96,10 @@ footer{text-align:center;padding:40px;font-size:13px;color:#777;}
 
 <header>
   <div class="nav">
-    <img src="logo.PNG" alt="">
+    <img src="logo.png" alt="ロゴ">
     <ul>
       <li><a href="#service">サービス</a></li>
       <li><a href="#pricing">料金プラン</a></li>
-      <li><a href="#flow">導入の流れ</a></li>
       <li><a href="#company">会社概要</a></li>
       <li><a href="#contact">お問い合わせ</a></li>
     </ul>
@@ -109,7 +111,7 @@ footer{text-align:center;padding:40px;font-size:13px;color:#777;}
     <h1>言葉を変えるのではない。<br>市場に響く形へ変える。</h1>
     <p>売上と採用を加速させる、次世代の海外向けローカライズサービス。</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlufWkgNPSx8T_Bp51PmmtUAtzvFpWJA0oeaTFrPafQorZsw/viewform?usp=header"
-       class="btn" target="_blank" rel="noopener">
+       class="btn" target="_blank">
        無料相談はこちら
     </a>
   </div>
@@ -142,10 +144,6 @@ footer{text-align:center;padding:40px;font-size:13px;color:#777;}
           <li>翻訳＋ローカライズ</li>
           <li>ネイティブチェック</li>
         </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdho50RF-_T0ArXG78NS4vbJOtK8YusoEfTZrL47LnLwN9lFw/viewform?usp=sharing&ouid=105930625908143107413"
-           class="btn" target="_blank" rel="noopener">
-           相談する
-        </a>
       </div>
 
       <div class="plan featured">
@@ -157,10 +155,6 @@ footer{text-align:center;padding:40px;font-size:13px;color:#777;}
           <li>構成再設計</li>
           <li>プレゼン原稿作成</li>
         </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmwBLZBuisdNEFtL9-lwzJpAGPuFxx2UiKJZp66XQ91YhGWA/viewform?usp=sharing&ouid=105930625908143107413"
-           class="btn" target="_blank" rel="noopener">
-           相談する
-        </a>
       </div>
 
       <div class="plan">
@@ -171,12 +165,20 @@ footer{text-align:center;padding:40px;font-size:13px;color:#777;}
           <li>競合比較資料作成</li>
           <li>ストーリー再構築</li>
         </ul>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTw6b6hB8WXr-BDBSU1kTl49nUuJ-Rc7OBZZmdGRFZ1pH2ng/viewform?usp=sharing&ouid=105930625908143107413"
-           class="btn" target="_blank" rel="noopener">
-           相談する
-        </a>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="company">
+  <div class="section-inner">
+    <h2 class="section-title">会社概要</h2>
+    <table class="company-table">
+      <tr><th>会社名</th><td>合同会社 国剤ビジネス翻訳社</td></tr>
+      <tr><th>設立日</th><td>2022年05月17日</td></tr>
+      <tr><th>所在地</th><td>大阪府大阪市中央区肥後町3丁目6</td></tr>
+      <tr><th>代表者</th><td>岡崎 軒閨</td></tr>
+    </table>
   </div>
 </section>
 
@@ -184,7 +186,7 @@ footer{text-align:center;padding:40px;font-size:13px;color:#777;}
   <div class="section-inner">
     <h2 class="section-title">お問い合わせ</h2>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlufWkgNPSx8T_Bp51PmmtUAtzvFpWJA0oeaTFrPafQorZsw/viewform?usp=header"
-       class="btn" target="_blank" rel="noopener">
+       class="btn" target="_blank">
        今すぐ問い合わせる
     </a>
   </div>
